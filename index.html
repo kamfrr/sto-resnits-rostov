@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sto Resnits · наращивание ресниц в Ростове-на-Дону</title>
-<meta name="description" content="Студия ресниц Sto Resnits в Ростове-на-Дону, Стабильная улица, 11: наращивание ресниц от 1Д до 8Д, ламинирование, брови, перманентный макияж. Цены и время каждой процедуры на сайте.">
+<meta name="description" content="Студия ресниц Sto Resnits в Ростове-на-Дону, Стабильная улица, 11: наращивание ресниц от 1Д до 7Д, ламинирование, брови, перманентный макияж, лазерная эпиляция. Цены и время каждой процедуры на сайте.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sto Resnits · студия ресниц">
 <meta property="og:description" content="Наращивание ресниц в Ростове-на-Дону: посмотрите объёмы от 1Д до 5Д, под каждым время и цена.">
@@ -160,6 +160,14 @@
   .rows .time { grid-row: 1; grid-column: 2; color: var(--v-ink-soft); font-size: var(--v-t-sm); white-space: nowrap; font-variant-numeric: tabular-nums; }
   .rows .price { grid-row: 1; grid-column: 3; font-family: var(--v-font-display); font-size: var(--v-t-lg); color: var(--v-accent-deep); white-space: nowrap; min-width: 6.5ch; text-align: right; }
   .rows .free { color: var(--v-ink); font-weight: 500; }
+  .more { margin-top: var(--v-7); }
+  .more > summary { list-style: none; cursor: pointer; }
+  .more > summary::-webkit-details-marker { display: none; }
+  .more > summary::after { content: ""; width: .45em; height: .45em; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-.15em); transition: transform .2s var(--v-ease-out); }
+  .more[open] > summary::after { transform: rotate(-135deg) translateY(-.05em); }
+  .more > summary .is-open, .more[open] > summary .is-closed { display: none; }
+  .more[open] > summary .is-open { display: inline; }
+  .more > .rows { margin-top: var(--v-5); }
   /* промежуточный призыв: та же кнопка, рядом одна строка-факт */
   .cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-5); margin-top: var(--v-7); }
   .cta span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 34ch; text-wrap: pretty; }
@@ -275,7 +283,7 @@
               <span class="v-label"><span class="only-touch">Sto Resnits · </span>Студия ресниц на Западном</span>
               <h1 class="v-display nd nd--xl">Наращивание ресниц в <span class="nowrap">Ростове-на-Дону</span> – сначала посмотрите объёмы</h1>
               <p>От натурального 1Д до яркого 5Д: под каждым объёмом время процедуры и цена. Выберите свой.</p>
-              <div class="gal__price"><b>2100&nbsp;₽</b><span>классика 1Д, 1 час</span></div>
+              <div class="gal__price"><b>2200&nbsp;₽</b><span>классика 1Д, 1 час</span></div>
               <a class="v-btn" href="tel:+79282279559">Позвонить</a>
             </div>
 
@@ -286,7 +294,7 @@
               <figcaption class="work__cap">
                 <span class="work__num">01</span>
                 <h3>Классика 1Д</h3>
-                <p><span>Натурально, без перегруза.</span> 1 час. <span class="nowrap">2100&nbsp;₽</span></p>
+                <p><span>Натурально, без перегруза.</span> 1 час. <span class="nowrap">2200&nbsp;₽</span></p>
               </figcaption>
             </figure>
 
@@ -297,7 +305,7 @@
               <figcaption class="work__cap">
                 <span class="work__num">02</span>
                 <h3>Объём 2Д</h3>
-                <p><span>Гуще и выразительнее.</span> 1,5 часа. <span class="nowrap">2300&nbsp;₽</span></p>
+                <p><span>Гуще и выразительнее.</span> 1,5 часа. <span class="nowrap">2400&nbsp;₽</span></p>
               </figcaption>
             </figure>
 
@@ -330,7 +338,7 @@
               <figcaption class="work__cap">
                 <span class="work__num">05</span>
                 <h3>Объём 5Д</h3>
-                <p><span>Почти сценический.</span> 2 часа. <span class="nowrap">3000&nbsp;₽</span></p>
+                <p><span>Почти сценический.</span> 2 часа. <span class="nowrap">2900&nbsp;₽</span></p>
               </figcaption>
             </figure>
           </div>
@@ -357,15 +365,26 @@
         </figure>
         <div class="services__list">
           <ul class="rows" data-v-in data-v-stagger="50">
-            <li><h3>Классика 1Д</h3><span class="time">1 час</span><span class="price v-nums">2100&nbsp;₽</span><p>Одна ресница к каждой своей: аккуратный натуральный взгляд.</p></li>
-            <li><h3>Объём 1,5Д и 2Д</h3><span class="time">1,1–1,5 часа</span><span class="price v-nums">от 2200&nbsp;₽</span><p>Лёгкий объём: гуще своих, но натурально. 2Д – 2300&nbsp;₽.</p></li>
+            <li><h3>Классика 1Д</h3><span class="time">1 час</span><span class="price v-nums">2200&nbsp;₽</span><p>Одна ресница к каждой своей: аккуратный натуральный взгляд.</p></li>
+            <li><h3>Двойная классика и 2Д</h3><span class="time">1,1–1,5 часа</span><span class="price v-nums">от 2300&nbsp;₽</span><p>Лёгкий объём: гуще своих, но натурально. Двойная классика – 2300&nbsp;₽, 2Д – 2400&nbsp;₽.</p></li>
             <li><h3>Объём 3Д</h3><span class="time">1,5 часа</span><span class="price v-nums">2500&nbsp;₽</span><p>Пушистый выразительный объём.</p></li>
             <li><h3>Объём 4Д</h3><span class="time">1,5 часа</span><span class="price v-nums">2700&nbsp;₽</span><p>Насыщенный заметный объём для яркого образа.</p></li>
-            <li><h3>Объём 5Д</h3><span class="time">2 часа</span><span class="price v-nums">3000&nbsp;₽</span><p>Максимальный эффект, близкий к сценическому.</p></li>
-            <li><h3>Объём 6–8Д</h3><span class="time">2,5 часа</span><span class="price v-nums">3500&nbsp;₽</span><p>Самый пышный объём – эффект «пушистого веера».</p></li>
+            <li><h3>Объём 5Д</h3><span class="time">2 часа</span><span class="price v-nums">2900&nbsp;₽</span><p>Максимальный эффект, близкий к сценическому.</p></li>
+            <li><h3>Объём 6–7Д</h3><span class="time">2,5 часа</span><span class="price v-nums">от 3100&nbsp;₽</span><p>Самый пышный объём – эффект «пушистого веера». 6Д – 3100&nbsp;₽, 7Д – 3500&nbsp;₽. Мокрый эффект к любому объёму – +200&nbsp;₽.</p></li>
             <li><h3>Ламинирование ресниц</h3><span class="time">1,1 часа</span><span class="price v-nums">1800&nbsp;₽</span><p>Изгиб, густота и блеск своих ресниц на несколько недель.</p></li>
             <li><h3>Перманентный макияж</h3><span class="time">2 часа</span><span class="price v-nums">7000&nbsp;₽</span><p>Брови или губы. Коррекция через 1–1,5 месяца.</p></li>
           </ul>
+          <details class="more">
+            <summary class="v-btn v-btn--ghost"><span class="is-closed">Лазерная эпиляция – развернуть прайс</span><span class="is-open">Свернуть прайс эпиляции</span></summary>
+          <ul class="rows">
+            <li><h3>Лицо и шея</h3><span class="price v-nums">от 500&nbsp;₽</span><p>Одна зона лица – 500&nbsp;₽, лицо полностью – 1500&nbsp;₽, шея – 900&nbsp;₽.</p></li>
+            <li><h3>Руки</h3><span class="price v-nums">от 1000&nbsp;₽</span><p>Подмышки – 1000&nbsp;₽, предплечья – 1300&nbsp;₽, руки полностью – 1900&nbsp;₽.</p></li>
+            <li><h3>Ноги</h3><span class="price v-nums">от 1500&nbsp;₽</span><p>Бёдра – 1500&nbsp;₽, голени – 1500&nbsp;₽, ноги полностью – 2200&nbsp;₽.</p></li>
+            <li><h3>Тело</h3><span class="price v-nums">от 500&nbsp;₽</span><p>Живот полоска – 500&nbsp;₽, грудь ореолы – 600&nbsp;₽, поясница – 1000&nbsp;₽, живот полностью – 1300&nbsp;₽, спина полностью – 2000&nbsp;₽.</p></li>
+            <li><h3>Интим-зона</h3><span class="price v-nums">от 1300&nbsp;₽</span><p>Бикини классика – 1300&nbsp;₽, ягодицы – 1500&nbsp;₽, бикини глубокое – 2000&nbsp;₽.</p></li>
+            <li><h3>Выгодные комплексы</h3><span class="price v-nums">от 2300&nbsp;₽</span><p>Бикини глубокое + подмышки – 2300&nbsp;₽, + голени – 3000&nbsp;₽, + ноги полностью – 3200&nbsp;₽, + подмышки + голени – 3400&nbsp;₽, + подмышки + ноги полностью – 3700&nbsp;₽. Тело полностью – 5500&nbsp;₽.</p></li>
+          </ul>
+          </details>
           <div class="cta" data-v-in>
             <a class="v-btn" href="tel:+79282279559">Позвонить</a>
             <span>Позвоните или напишите в Telegram: подберём объём и свободное время.</span>
@@ -497,7 +516,7 @@
   "url": "https://kamfrr.github.io/sto-resnits-rostov",
   "image": "https://kamfrr.github.io/sto-resnits-rostov/assets/og.jpg",
   "telephone": "+79282279559",
-  "priceRange": "от 1800 ₽",
+  "priceRange": "от 500 ₽",
   "address": { "@type": "PostalAddress", "streetAddress": "Стабильная улица, 11", "addressLocality": "Ростов-на-Дону", "addressCountry": "RU" },
   "openingHours": "Mo-Su 09:00-20:00",
   "sameAs": ["https://yandex.ru/maps/org/sto_resnits/173640069323/"]
